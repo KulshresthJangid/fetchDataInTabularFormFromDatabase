@@ -7,6 +7,11 @@
     <title>Document</title>
 </head>
 <body>
+    <style>
+        table, th, td {
+    border:1px solid black;
+    }
+    </style>
     
     <table>
         <tr>
@@ -18,17 +23,16 @@
             <th>Team Name</th>
         </tr>
         <% data.forEach((data, index) => { %>
-           <% const arr2 = teamName[index] %> 
-            <tr>
-                <td><%= data.full_name %></td>
-                <td><%= data.email %></td>
-                <td><%= data.number %></td>
-                <td><%= data.city %></td>
-                <td><%= data.url %></td>
-                <td><%= arr2 %> </td>
-            </tr>
-        <%  }) %>
-
+            <% const arr2 = teamName[index] %> 
+             <tr>
+                 <td><%= data.full_name %></td>
+                 <td><%= data.email %></td>
+                 <td><%= data.number %></td>
+                 <td><%= data.city %></td>
+                 <td><%= data.url %></td>
+                 <td><%= arr2 %> </td>
+             </tr>
+         <%  }) %>
     </table>
 </body>
 </html>
