@@ -12,7 +12,7 @@
     border:1px solid black;
     }
     </style>
-    
+    <div id="tableClass" style="display: none;">
     <table>
         <tr>
             <th>Full Name</th>
@@ -34,5 +34,13 @@
              </tr>
          <%  }) %>
     </table>
+</div>
+<button onclick="myFunction()">Click to load</button>
+<script>
+    function myFunction() {
+        let table = document.getElementById('tableClass')
+        table.style.display='Block'
+    }
+</script>
 </body>
 </html>
